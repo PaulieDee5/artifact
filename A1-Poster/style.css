@@ -1,0 +1,153 @@
+/*
+
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "header ."
+						 "title title"
+						 "content content"
+						 "footer footer";
+	
+}
+
+.title{
+	grid-area: title;
+}
+
+.header{
+	grid-area: header;
+}
+
+.content{
+	grid-area: content;
+
+}
+
+.footer{
+	grid-area: footer;
+}
+
+
+.grid div:nth-child(even){
+	background-color: red;
+}
+
+.grid div:nth-child(odd){
+	background-color: green;
+}
+
+*/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0%;
+	background-color: #111010;
+}
+
+/*.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "top-bar top-bar"
+						 "title title"
+						 "content content"
+						 "footer footer";
+
+}
+
+.top-bar{
+	position: relative;
+	font-family: 'Archivo', sans-serif;
+	font-weight: 400;
+	color: #e2f761;
+	font-size: 21px;
+}
+*/
+
+#big-column{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "love love" "left right";
+
+
+}
+
+.love{
+	height: 700px;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+
+}
+
+.left{
+	height: 300px;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	position: relative;
+	display: block;
+}
+
+
+.right{
+	height: 300px;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	position: relative;
+	display: block;
+
+}
+
+.left-txt{
+	margin-left: 30px;
+	font-family:'Archivo', sans-serif;
+	font-weight: 400;
+	color: #e2f761;
+	font-size: 90px;
+	text-align: left;
+
+}
+.right-txt{
+	font-family:'Archivo', sans-serif;
+	font-weight: 400;
+	color: #e2f761;
+	font-size: 50px;
+	text-align: right;
+	text-underline: 1px solid #e2f761;
+
+}
+#top-bar{
+	height: 100px;
+	position: fixed;
+	width: 100%;
+
+}
+
+.description{
+	min-height: 90px;
+	margin-top: 5px;
+	margin-left: 5px;
+	max-width: 300px;
+	font-family:'Archivo', sans-serif;
+	font-weight: 400;
+	color: #e2f761;
+	font-size: 21px;
+
+
+}
+
+#footer{
+	background: #e2f761;
+	min-height: 200px;
+}
